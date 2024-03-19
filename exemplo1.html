@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro form HTML</h1>
+    <form>
+        <label for="nome">Nome: </label>
+        <input id= "nome" name="nome" placeholder="digite seu nome aqui" required>
+        <br>
+        <label for="number">Celular</label>
+        <input id="number" type="number" name="telefone" required>
+        <br>
+        <input name="desabilitado" disabled value="desabilitado">
+        <br>
+        <input name="somente_leitura" readonly value="somente_leitura">
+        <br>
+        <label for="email">E-mail:</label>
+        <input id="email" type="email" name="email" placeholder="algumacoisa@exemplo.com">
+        <br>
+        <input type="date" name="data">
+        <br>
+        <input type="color" name="black">
+        <br>
+        <textarea  name="area-text"
+        id="area"
+        placeholder="Digite aqui sua msg..."
+        coluns="30"
+        rows="10"
+        ></textarea>
+        <br>
+        <label for="selecao">Selecione o estado</label>
+        <br>
+        <select>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+        </select>
+        <br>
+       <fieldset>
+        <legend>Escolha sua seleção</legend>
+            <input type="checkbox" name="time" value="sp" id="sao-paulo"><label for="sao-paulo">São Paulo</label>
+            <input type="checkbox" name="time" value="mg" id="minasgerais"><label for="minasgerais">Minas Gerais</label>
+            <input type="checkbox" name="time" value="pr" id="parana"><label for="parana">Parana</label>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
