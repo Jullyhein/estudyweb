@@ -18,11 +18,64 @@
         .fundo-azul{
                 background-color: blue;
             }
+        #ultimo-p{
+            font-weight: 700;
+            background-color: brown;
+        }
+        #btn-1{
+            display:inline-block;
+            border:1px solid black;
+            border-radius: 5px;
+            padding:5px 15px;
+            text-decoration: none;
+            color: black;
+            width: 110px;
+            height:18px;
+        }
+        #btn-1:hover{
+            background-color: lightcoral;
+        }
+        #btn-1:active{
+            background-color: lightcoral;
+            box-shadow:
+                inset 4px 2px 2px gray,
+                inset -4px -2px 2px gray,
+                inset -4px 2px 2px gray,
+                inset 4px -2px 2px gray;
+            font-size: 0.9em;
+        }
+        .azul{
+            background-color: blue;
+        }
+        .verde{
+            background-color: green;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .branco{
+            background-color: white;
+        }
+        div{
+            border: 1px solid black;
+            margin: 12px;
+        }
+        div.quadrado{
+            width:24px;
+            height: 24px;
+            margin: 12px;
+        }
+        #caixa-2 .quadrado{
+            filter:brightness(50%)
+        }
+        .fonte-12{
+            font-size: 12px;
+        }
+
     </style>
 </head>
-<body style="background-color: aquamarine;">
-      
-    <div class="'fundo-azul">
+<body style="background-color: lightpink;">
+    <div class="fundo-azul">
         Texto na div com a classe fundo-azul
     </div>
   
@@ -30,9 +83,17 @@
         Texo na div com a classe fundo-azul
     </p>
 
-    <p class="center">Texto centralizado usando a classe center</p>
+    <p class="center fonte-12">Texto centralizado usando a classe center</p>
 
-    <p class="right">Texto alinhado a direita usando a classe right</p>
+    <p id="ultimo-p" class="right fundo-azul" style="background-color: red;">Texto alinhado a direita usando a classe right</p>
+
+    <a id="btn-1" href="https://www.google.com" target="_blank">Ir para o Google</a>
+
+    <div id="caixa-1" class="branco">
+        <div class="azul quadrado"></div>
+        <div class="verde quadrado"></div>
+        <div class="amarelo quadrado"></div>
+    </div>
 
 </body>
 </html>
